@@ -1,7 +1,6 @@
-﻿// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+﻿// Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
-
 
 int[] GetRandomArray()
 
@@ -14,12 +13,13 @@ int[] GetRandomArray()
     return array;
 }
 
-int элемент(int[] massive)
+
+   int элемент(int[] massive)
 {
     int элемент = 0;
     for (int j = 0; j < massive.Length; j++) 
     {
-         if (massive[j] % 2 == 0)
+         if (j % 2 ==1)
 
         {
             элемент += massive[j];
@@ -28,9 +28,10 @@ int элемент(int[] massive)
     return элемент;
 }   
 
-int[] newarray =   GetRandomArray();
+int[] newarray = GetRandomArray();
 int sum = элемент(newarray);
 
 Console.WriteLine($"{string.Join(", ", newarray)}");
 
-Console.WriteLine($"Сумма четных чисел в массиве равна = {sum}");
+Console.WriteLine($"Сумма чисел в массиве равна = {sum}");
+
