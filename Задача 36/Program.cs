@@ -33,5 +33,5 @@ int sum = элемент(newarray);
 
 Console.WriteLine($"{string.Join(", ", newarray)}");
 
-Console.WriteLine($"Сумма чисел в массиве равна = {sum}");
+Console.WriteLine($"Сумма чисел в массиве равна - > {sum}");
 
